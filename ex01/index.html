@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Exercício de demonstração de seletores CSS.">
+    <title>Exercício 01 | Seletores CSS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <a class="saltar-conteudo" href="#conteudo">Saltar para o conteúdo</a>
+
+    <header id="cabecalho">
+        <div class="contentor">
+            <p class="etiqueta">Módulo 2 · Exercício 01</p>
+            <h1>Seletores CSS</h1>
+            <p class="subtitulo">Uma introdução prática à seleção e estilização de elementos HTML.</p>
+
+            <nav aria-label="Navegação principal">
+                <a href="#inicio">Início</a>
+                <a href="#seletores">Seletores</a>
+                <a href="#contactos">Contactos</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="conteudo" class="contentor">
+        <section id="inicio" class="cartao">
+            <h2>Introdução</h2>
+            <p>
+                Esta página demonstra diferentes
+                <span class="destaque">seletores CSS</span>.
+            </p>
+            <p>Os seletores permitem escolher quais os elementos HTML que serão estilizados.</p>
+        </section>
+
+        <section id="seletores" class="cartao">
+            <h2>Lista de seletores</h2>
+            <ul class="lista-seletores">
+                <li><strong>Seletor universal:</strong> <code>*</code></li>
+                <li><strong>Seletor de elemento:</strong> <code>p</code></li>
+                <li><strong>Seletor de classe:</strong> <code>.destaque</code></li>
+                <li><strong>Seletor de ID:</strong> <code>#cabecalho</code></li>
+            </ul>
+        </section>
+
+        <section id="contactos" class="cartao">
+            <h2>Formulário</h2>
+            <p>Preenche os campos abaixo para simular o envio de uma mensagem.</p>
+
+            <form action="#" method="post">
+                <p>
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" autocomplete="name" placeholder="O teu nome" required>
+                </p>
+
+                <p>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" autocomplete="email" placeholder="nome@exemplo.pt" required>
+                </p>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Exercício de CSS3 · Programação Web</p>
+    </footer>
+</body>
+</html>
